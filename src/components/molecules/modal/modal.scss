@@ -1,0 +1,133 @@
+@import "./../../../style/config";
+
+#modal {
+  width: 510px !important;
+  margin: auto !important;
+  font-family: $font-stack;
+
+  .modal-content {
+    padding: 20px !important;
+
+    .title-new {
+      font-size: 20px;
+      font-weight: bolder;
+      color: $primary-font;
+      padding-bottom: 18px !important;
+    }
+
+    .title-input {
+      font-weight: 500 !important;
+      color: $primary-font;
+      padding-bottom: 5px !important;
+      font-size: 15px;
+    }
+
+    .modal-input {
+      border: none;
+      background-color: $background;
+      height: 32px;
+      padding-left: 10px !important;
+      border-radius: 5px;
+    }
+
+    .description {
+      font-size: 17px;
+      padding: 10px 0 !important;
+      font-weight: 500 !important;
+      color: $primary-font;
+    }
+
+    .modal-input-area {
+      min-width: 100%;
+      min-height: 100px;
+      padding: 5px 10px !important;
+      border-radius: 5px;
+      border: none;
+      background-color: $background;
+    }
+
+    .upload-cover {
+      width: 200px;
+      height: 120px;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      border-radius: 5px;
+      font-weight: 800;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 20px !important;
+
+      input.upload {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        font-size: 9px;
+        height: 120px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+      }
+
+      img {
+        margin-bottom: 5px !important;
+      }
+    }
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+
+      .cancel-btn {
+        width: 80px;
+        height: 35px;
+        padding: 5px 10px !important;
+        border: 1px solid $primary-color;
+        background-color: tranparent;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        line-height: 25px;
+        font-weight: bold;
+        color: $primary-color;
+        margin-right: 5px !important;
+        box-sizing: border-box;
+        transition: 0.3s linear;
+
+        &:hover {
+          background-color: $primary-color;
+          border: none;
+          color: $white;
+          cursor: pointer;
+        }
+      }
+
+      .create-btn {
+        width: 120px;
+        height: 35px;
+        background-color: $primary-color;
+        font-weight: bold;
+        color: $white;
+        border-radius: 5px;
+        padding: 5px 10px !important;
+        display: flex;
+        justify-content: center;
+        line-height: 25px;
+        margin-left: 5px !important;
+        transition: 0.3s linear;
+        box-sizing: border-box;
+
+        &:hover {
+          background-color: transparent;
+          border: 1px solid $primary-color;
+          color: $primary-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

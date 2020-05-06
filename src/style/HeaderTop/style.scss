@@ -1,0 +1,99 @@
+@import "./../config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Header
+
+header {
+  display: flex;
+  flex: 1;
+  background-color: $white;
+  height: 45px;
+  padding: 10px 40px;
+  box-shadow: 0 0 5px 0px $shadow-header;
+
+  .row {
+    width: 100%;
+    padding: 0 30px !important;
+    img.app-logo {
+      width: 60px;
+      height: 28px;
+      margin-top: 8px !important;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    input {
+      background-color: $background;
+      outline: none;
+      border: none;
+      width: 20rem;
+      padding: 10px !important;
+      font-size: 15px;
+      height: 28px;
+      border-radius: 3px;
+      margin-top: 8px !important;
+    }
+  }
+  .course-section {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: flex-end;
+
+    .my-course {
+      font-weight: bold;
+      color: $primary-font;
+      font-size: 13px;
+      margin-top: 13px !important;
+      margin-right: 20px !important;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .switch-button {
+      width: 200px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      border: 1px solid $primary-color;
+      font-weight: bold;
+      border-radius: 3px;
+      font-size: 13px;
+      margin-top: 10px !important;
+      margin-right: 20px !important;
+      color: $primary-color;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        border: none;
+        background-color: $primary-color;
+        color: $white;
+      }
+    }
+
+    .profile-thumb {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-top: 5px !important;
+      margin-left: 20px !important;
+      cursor: pointer;
+
+      .profile-pict {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

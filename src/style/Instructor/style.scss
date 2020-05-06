@@ -1,0 +1,96 @@
+@import "./../config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-instructor {
+  width: 1100px;
+  margin: auto !important;
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+
+    .title-head {
+      font-size: 22px;
+      font-weight: bold;
+      color: $primary-font;
+      margin: 20px 0 !important;
+    }
+
+    .new-course-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35px;
+      padding: 5px 10px !important;
+      background-color: $primary-color;
+      font-weight: bold;
+      color: $white;
+      margin: 20px 0 !important;
+      border-radius: 5px;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $background;
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .instructor-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 48px !important;
+
+    .card-item {
+      margin: 10px 5px !important;
+
+      .title {
+        font-weight: bold;
+        padding: 10px !important;
+      }
+    }
+  }
+}
+
+.container-empty-course {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -55px !important;
+
+  .title-empty-course {
+    font-size: 35px;
+    font-weight: bold;
+    color: $primary-font;
+  }
+
+  .add-your-own {
+    background-color: $primary-color;
+    color: $white;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 25px !important;
+    border-radius: 5px;
+    margin-top: 10px !important;
+    transition: 0.1s ease-in;
+    user-select: none;
+
+    &:hover {
+      padding: 4px 25px !important;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}
