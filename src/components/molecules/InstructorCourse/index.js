@@ -7,7 +7,10 @@ export default class InstructorCourse extends Component {
   render() {
     return (
       <>
-        <div className="container-instructor">
+        <div
+          className="container-instructor"
+          style={{ minHeight: window.innerHeight }}
+        >
           <div className="head">
             <div className="title-head">Created Courses</div>
             <Modals />

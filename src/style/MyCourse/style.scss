@@ -1,0 +1,9 @@
+@import "./../config";
+
+.my-course-title {
+  font-family: $font-stack;
+  font-size: 30px;
+  color: $primary-font;
+  margin-top: 10px !important;
+  margin-left: 2.5rem !important;
+}

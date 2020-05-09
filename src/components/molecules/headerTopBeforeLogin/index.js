@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 
 import "./../../../style/HeaderTop/style.scss";
 import Logo from "./../../../assets/Logo.svg";
+import Vector from "./../../../assets/img/category.png";
 import SearchBar from "./../../atoms/LandingPage/searchBar";
-import MyCourse from "./../../atoms/LandingPage/myCourse";
-import SwitchButton from "./../../atoms/LandingPage/switchButton";
-import Profile from "./../../atoms/LandingPage/profileIcon";
-import { Consumer } from "./../../../context/context";
+import Login from "./../../atoms/LandingPage/loginButtonHead";
+import Register from "./../../atoms/LandingPage/registerButtonHead";
 
 export default class headerTop extends Component {
   render() {
@@ -21,16 +20,17 @@ export default class headerTop extends Component {
                 <img src={Logo} className="app-logo " alt="logo" />
               </Link>
             </Col>
+            <Col md={2} className="category">
+              <img src={Vector} alt="category" />
+              <div className="category-title">Category</div>
+            </Col>
             <Col>
               <SearchBar />
             </Col>
           </Row>
           <Row className="course-section">
-            <MyCourse />
-
-            <SwitchButton title={this.props.title} link={this.props.link} />
-
-            <Profile />
+            <Login />
+            <Register />
           </Row>
         </header>
       </>

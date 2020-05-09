@@ -3,15 +3,24 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
+
+import { ContextProvider } from "./context/context";
+
+const client = new ApolloClient({
+  uri: "https://mejikacademy1588499516927.microgen.mejik.id/graphql",
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={client}>
+      <ContextProvider>
+        <App />
+      </ContextProvider>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();

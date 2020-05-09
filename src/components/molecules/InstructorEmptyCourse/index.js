@@ -15,7 +15,10 @@ export default class index extends Component {
   render() {
     return (
       <>
-        <div className="container-empty-course">
+        <div
+          className="container-empty-course"
+          style={{ height: window.innerHeight }}
+        >
           <div className="title-empty-course">Your Course is Empty</div>
           <Button onClick={() => this.handleShow()} />
           <Modal show={this.state.show} onClick={() => this.handleShow()} />

@@ -7,7 +7,7 @@ import InstructorEmptyCourse from "./../../../components/molecules/InstructorEmp
 
 export default class InstructorMain extends Component {
   state = {
-    isAvaible: false,
+    isAvaible: true,
   };
   render() {
     return (
